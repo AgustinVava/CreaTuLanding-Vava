@@ -1,6 +1,8 @@
-import React from "react";
 
-const ProductCard = ({ product, onAddToCart }) => {
+import React from "react";
+import { Link } from "react-router-dom";
+
+const ProductCard = ({ product, addToCart }) => {
   return (
     <div
       style={{
@@ -29,7 +31,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         style={{ fontSize: "1rem", color: "#555", marginBottom: "16px" }}
       >{`$${product.price.toFixed(2)}`}</p>
       <button
-        onClick={() => onAddToCart(product)}
+        onClick={() => addToCart(product)}
         style={{
           backgroundColor: "#007bff",
           color: "white",
@@ -41,6 +43,17 @@ const ProductCard = ({ product, onAddToCart }) => {
       >
         Agregar al carrito
       </button>
+      <Link
+        to={`/product/${product.id}`}
+        style={{
+          display: "block",
+          marginTop: "10px",
+          color: "#007bff",
+          textDecoration: "none",
+        }}
+      >
+        Ver Detalles
+      </Link>
     </div>
   );
 };

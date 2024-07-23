@@ -14,6 +14,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
               display: "flex",
               alignItems: "center",
             }}
+            
           >
             <img
               src={item.image}
