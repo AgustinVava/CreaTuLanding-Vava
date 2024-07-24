@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "Preentrega 2/ecommerce-bikes"
+	},
+	{
+		"path": "Preentrega 2/node_modules"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "ecommerce-bikes"
+  }
+}
